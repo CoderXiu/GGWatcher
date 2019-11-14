@@ -122,7 +122,17 @@
 }
 
 - (GGWatcherReport *)report {
-    return [[GGWatcherReport alloc] initWithValue:@(_fps).stringValue];
+    return [[GGWatcherReport alloc] initWithValue:[NSString stringWithFormat:@"%2.f", _fps]];
+}
+
+- (void)start {
+    [super start];
+    [_core startMonitoring];
+}
+
+- (void)stop {
+    [super stop];
+    [_core stopMonitoring];
 }
 
 #pragma mark - GGFPSMonitorCoreDelegate
