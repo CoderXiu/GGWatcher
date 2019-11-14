@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CEDD4B3237D39980093CFC7 /* GGWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEDD4B2237D39980093CFC7 /* GGWatcher.m */; };
+		5CEDD4B4237D39980093CFC7 /* GGWatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CEDD4B1237D39980093CFC7 /* GGWatcher.h */; };
+		5CEDD4BF237D3ECB0093CFC7 /* GGTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEDD4BE237D3ECB0093CFC7 /* GGTimer.m */; };
+		5CEDD4C3237D47430093CFC7 /* GGMemoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEDD4C2237D47430093CFC7 /* GGMemoryWatcher.m */; };
+		5CEDD4C6237D48060093CFC7 /* GGFPSWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEDD4C5237D48060093CFC7 /* GGFPSWatcher.m */; };
+		5CEDD4C9237D48FB0093CFC7 /* GGCPUWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEDD4C8237D48FB0093CFC7 /* GGCPUWatcher.m */; };
+		5CEDD4CC237D4A3D0093CFC7 /* GGSandBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEDD4CB237D4A3D0093CFC7 /* GGSandBoxViewController.m */; };
+		5CEDD4CF237D4ACF0093CFC7 /* GGWatcherEngine+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEDD4CE237D4ACF0093CFC7 /* GGWatcherEngine+Test.m */; };
+		5CEDD4D2237D4B360093CFC7 /* GGWatcher+Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEDD4D1237D4B360093CFC7 /* GGWatcher+Engine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5CEDD4AC237D39980093CFC7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				5CEDD4B4237D39980093CFC7 /* GGWatcher.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5CEDD4AE237D39980093CFC7 /* libGGWatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGGWatcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CEDD4B1237D39980093CFC7 /* GGWatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGWatcher.h; sourceTree = "<group>"; };
+		5CEDD4B2237D39980093CFC7 /* GGWatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGWatcher.m; sourceTree = "<group>"; };
+		5CEDD4BD237D3ECB0093CFC7 /* GGTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGTimer.h; sourceTree = "<group>"; };
+		5CEDD4BE237D3ECB0093CFC7 /* GGTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGTimer.m; sourceTree = "<group>"; };
+		5CEDD4C1237D47430093CFC7 /* GGMemoryWatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGMemoryWatcher.h; sourceTree = "<group>"; };
+		5CEDD4C2237D47430093CFC7 /* GGMemoryWatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGMemoryWatcher.m; sourceTree = "<group>"; };
+		5CEDD4C4237D48060093CFC7 /* GGFPSWatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGFPSWatcher.h; sourceTree = "<group>"; };
+		5CEDD4C5237D48060093CFC7 /* GGFPSWatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGFPSWatcher.m; sourceTree = "<group>"; };
+		5CEDD4C7237D48FB0093CFC7 /* GGCPUWatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGCPUWatcher.h; sourceTree = "<group>"; };
+		5CEDD4C8237D48FB0093CFC7 /* GGCPUWatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGCPUWatcher.m; sourceTree = "<group>"; };
+		5CEDD4CA237D4A3D0093CFC7 /* GGSandBoxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGSandBoxViewController.h; sourceTree = "<group>"; };
+		5CEDD4CB237D4A3D0093CFC7 /* GGSandBoxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGSandBoxViewController.m; sourceTree = "<group>"; };
+		5CEDD4CD237D4ACF0093CFC7 /* GGWatcherEngine+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GGWatcherEngine+Test.h"; sourceTree = "<group>"; };
+		5CEDD4CE237D4ACF0093CFC7 /* GGWatcherEngine+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GGWatcherEngine+Test.m"; sourceTree = "<group>"; };
+		5CEDD4D0237D4B360093CFC7 /* GGWatcher+Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GGWatcher+Engine.h"; sourceTree = "<group>"; };
+		5CEDD4D1237D4B360093CFC7 /* GGWatcher+Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GGWatcher+Engine.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CEDD4AB237D39980093CFC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CEDD4A5237D39980093CFC7 = {
+			isa = PBXGroup;
+			children = (
+				5CEDD4B0237D39980093CFC7 /* GGWatcher */,
+				5CEDD4AF237D39980093CFC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CEDD4AF237D39980093CFC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CEDD4AE237D39980093CFC7 /* libGGWatcher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CEDD4B0237D39980093CFC7 /* GGWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				5CEDD4C1237D47430093CFC7 /* GGMemoryWatcher.h */,
+				5CEDD4C2237D47430093CFC7 /* GGMemoryWatcher.m */,
+				5CEDD4C4237D48060093CFC7 /* GGFPSWatcher.h */,
+				5CEDD4C5237D48060093CFC7 /* GGFPSWatcher.m */,
+				5CEDD4C7237D48FB0093CFC7 /* GGCPUWatcher.h */,
+				5CEDD4C8237D48FB0093CFC7 /* GGCPUWatcher.m */,
+				5CEDD4B1237D39980093CFC7 /* GGWatcher.h */,
+				5CEDD4B2237D39980093CFC7 /* GGWatcher.m */,
+				5CEDD4D0237D4B360093CFC7 /* GGWatcher+Engine.h */,
+				5CEDD4D1237D4B360093CFC7 /* GGWatcher+Engine.m */,
+				5CEDD4BD237D3ECB0093CFC7 /* GGTimer.h */,
+				5CEDD4BE237D3ECB0093CFC7 /* GGTimer.m */,
+				5CEDD4CA237D4A3D0093CFC7 /* GGSandBoxViewController.h */,
+				5CEDD4CB237D4A3D0093CFC7 /* GGSandBoxViewController.m */,
+				5CEDD4CD237D4ACF0093CFC7 /* GGWatcherEngine+Test.h */,
+				5CEDD4CE237D4ACF0093CFC7 /* GGWatcherEngine+Test.m */,
+			);
+			path = GGWatcher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CEDD4AD237D39980093CFC7 /* GGWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CEDD4B7237D39980093CFC7 /* Build configuration list for PBXNativeTarget "GGWatcher" */;
+			buildPhases = (
+				5CEDD4AA237D39980093CFC7 /* Sources */,
+				5CEDD4AB237D39980093CFC7 /* Frameworks */,
+				5CEDD4AC237D39980093CFC7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GGWatcher;
+			productName = GGWatcher;
+			productReference = 5CEDD4AE237D39980093CFC7 /* libGGWatcher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CEDD4A6237D39980093CFC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GG;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = iosgg;
+				TargetAttributes = {
+					5CEDD4AD237D39980093CFC7 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5CEDD4A9237D39980093CFC7 /* Build configuration list for PBXProject "GGWatcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CEDD4A5237D39980093CFC7;
+			productRefGroup = 5CEDD4AF237D39980093CFC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CEDD4AD237D39980093CFC7 /* GGWatcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CEDD4AA237D39980093CFC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CEDD4BF237D3ECB0093CFC7 /* GGTimer.m in Sources */,
+				5CEDD4C3237D47430093CFC7 /* GGMemoryWatcher.m in Sources */,
+				5CEDD4D2237D4B360093CFC7 /* GGWatcher+Engine.m in Sources */,
+				5CEDD4C6237D48060093CFC7 /* GGFPSWatcher.m in Sources */,
+				5CEDD4C9237D48FB0093CFC7 /* GGCPUWatcher.m in Sources */,
+				5CEDD4CC237D4A3D0093CFC7 /* GGSandBoxViewController.m in Sources */,
+				5CEDD4CF237D4ACF0093CFC7 /* GGWatcherEngine+Test.m in Sources */,
+				5CEDD4B3237D39980093CFC7 /* GGWatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5CEDD4B5237D39980093CFC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5CEDD4B6237D39980093CFC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CEDD4B8237D39980093CFC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CEDD4B9237D39980093CFC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CEDD4A9237D39980093CFC7 /* Build configuration list for PBXProject "GGWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CEDD4B5237D39980093CFC7 /* Debug */,
+				5CEDD4B6237D39980093CFC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CEDD4B7237D39980093CFC7 /* Build configuration list for PBXNativeTarget "GGWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CEDD4B8237D39980093CFC7 /* Debug */,
+				5CEDD4B9237D39980093CFC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CEDD4A6237D39980093CFC7 /* Project object */;
+}
