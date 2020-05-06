@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GGWatcherEngine (Test)
+@interface GGWatcherEngine (Engine)
 
 + (instancetype)engine;
 

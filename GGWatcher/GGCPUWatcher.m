@@ -30,7 +30,7 @@
 
 @implementation GGCPUMonitorCore
 
-int64_t cpu_usage (void) {
+int64_t gg_cpu_usage (void) {
     kern_return_t kr;
     task_info_data_t tinfo;
     mach_msg_type_number_t task_info_count;
@@ -92,7 +92,7 @@ int64_t cpu_usage (void) {
 }
 
 + (SInt64)cpuUsage {
-    return cpu_usage();
+    return gg_cpu_usage();
 }
 
 + (NSUInteger)cpuCoreNumber {

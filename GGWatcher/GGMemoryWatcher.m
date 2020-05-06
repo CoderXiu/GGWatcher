@@ -10,7 +10,7 @@
 
 #import "GGMemoryWatcher.h"
 
-@interface MDMemoryMonitorCore : NSObject
+@interface GGMemoryMonitorCore : NSObject
 
 /**
  * Aplication usage memory calculation
@@ -33,9 +33,9 @@
 
 @end
 
-@implementation MDMemoryMonitorCore
+@implementation GGMemoryMonitorCore
 
-int64_t application_use_memory(void) {
+int64_t gg_application_use_memory(void) {
     task_vm_info_data_t vmInfo;
     mach_msg_type_number_t count = TASK_VM_INFO_COUNT;
     kern_return_t kernelReturn = task_info(mach_task_self(), TASK_VM_INFO, (task_info_t) &vmInfo, &count);
@@ -43,7 +43,7 @@ int64_t application_use_memory(void) {
     return (kernelReturn == KERN_SUCCESS) ? (useMemory / 1024 / 1024) : -1; // size in bytes
 }
 
-int64_t device_free_memory(void) {
+int64_t gg_device_free_memory(void) {
     vm_statistics64_data_t vmStats;
     mach_msg_type_number_t infoCount = HOST_VM_INFO_COUNT;
     kern_return_t kernReturn = host_statistics(mach_host_self(),
@@ -58,11 +58,11 @@ int64_t device_free_memory(void) {
 }
 
 + (SInt64)applicationUseMemory {
-    return application_use_memory();
+    return gg_application_use_memory();
 }
 
 + (SInt64)deviceFreeMemory {
-    return device_free_memory();
+    return gg_device_free_memory();
 }
 
 + (SInt64)deviceTotalMemory {
@@ -78,7 +78,7 @@ int64_t device_free_memory(void) {
 }
 
 - (GGWatcherReport *)report {
-    return [[GGWatcherReport alloc] initWithValue:@(MDMemoryMonitorCore.applicationUseMemory).stringValue];
+    return [[GGWatcherReport alloc] initWithValue:@(GGMemoryMonitorCore.applicationUseMemory).stringValue];
 }
 
 @end
